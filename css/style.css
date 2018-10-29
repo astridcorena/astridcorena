@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Marcellus SC', serif;
+}
+
+.home-wrapper {
+  background: url("../images/backgroundastrid.png")no-repeat center;
+  background-size: cover;
+  background-position: top;
+  color: white;
+}
+
+
+/*header*/
+header{
+  padding: 20px 0;
+}
+
+header img {
+  width: 100px;
+}
+
+header nav {
+  float: right;
+  margin-top: 20px;
+}
+
+header nav a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 30px;
+  padding: 10px 15px;
+}
+
+header nav a.active {
+  background: rgba(88, 214, 141, 0.6);
+  border-radius: 3px;
+}
+
+#home {
+  text-align: center;
+  padding: 120px 0 150px;
+}
+
+#home h1 {
+  font-size: 50px;
+}
+
+#home p {
+  font-size: 30px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+  typing 4.5s steps(40, end),
+  blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 80% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  40% { border-color: orange; }
+}
+
+#home .social a {
+  color: white;
+  display: inline-block;
+  font-size: 24px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+#aboutme {
+  padding: 20px 0px;
+}
+
+#aboutme .box {
+  display: inline-block;
+  text-align: center;
+  width: 40%;
+  padding-bottom: 200px;
+}
+
+#aboutme img {
+  width: 400px;
+  float: right;
+}
+
+
+/*Probando habilidades*/
+
+.container-skillbar {
+  display: inline-block;
+  width:50%;
+  padding-right: 10%;
+  padding-left: 10%;
+  margin-bottom: 50px;
+}
+.skillbar {
+  position:relative;
+  display:block;
+  margin-bottom:15px;
+  width:150%;
+  background:#efefef;
+  height:30px;
+  border-radius:3px;
+}
+
+.skillbar-title {
+  position:absolute;
+  top:0;
+  left:0;
+  width:110px;
+  font-weight:bold;
+  font-size:13px;
+  color:#fff;
+  background:#6adcfa;
+  border-top-left-radius:3px;
+  border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+  display:block;
+  background:rgba(0, 0, 0, 0.15);
+  padding:0 20px;
+  height:30px;
+  line-height:30px;
+  border-top-left-radius:3px;
+  border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+  height:30px;
+  width:0px;
+  border-radius:3px;
+}
+
+.skill-bar-percent {
+  position:absolute;
+  right:10px;
+  top:0;
+  font-size:11px;
+  height:30px;
+  line-height:30px;
+  color:#ffffff;
+  color:rgba(0, 0, 0, 0.5);
+}
+
+
+
+/*Terminando de Probar habilidades*/
+
+
+
+/*Sección Portfolio*/
+#portfolio {
+  background-color: #F8F9F9;
+}
+#portfolio .box {
+  display: inline-block;
+  text-align: center;
+  padding-left: 20px;
+}
+
+#portfolio img {
+  width: 300px;
+  padding: 0px 30px 0px 30px;
+}
+
+#portfolio h3 {
+  padding: 0 80px;
+}
+/*Sección Contacto*/
+#contact {
+  text-align: center;
+  color: rgba(88, 214, 141, 0.6);
+}
+
+#contact input {
+  padding: 20px;
+  width: 400px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+#contact textarea {
+  margin: 20px;
+  padding: 20px;
+  width: 400px;
+}
+
+#contact button {
+  padding: 20px 40px;
+  border-color: rgba(88, 214, 141, 0.6);
+  background-color: white;
+  border-radius: 3px;
+  line-height: 1px;
+  font-weight: bold;
+}
+
+
+
+/*Se usa para centrar divs en css*/
+section {
+  padding: 60px 0;
+}
+
+section h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.container {
+  width: 992px;
+  margin-left: auto;
+  margin-right: auto;
+}
